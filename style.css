@@ -10,7 +10,7 @@
             background-image: url("img/head.jpg");
             background-repeat:no-repeat;
             background-size:cover;
-            color: white;
+            color: rgb(137, 8, 8);
             padding: 50px 0;
             text-align: center;
         }
@@ -27,6 +27,8 @@
             display: flex;
             justify-content: center;
             padding: 10px;
+            position: sticky;
+            top: 0;
         }
 
         nav a {
@@ -80,6 +82,11 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
+        .card img {
+            width: 150px;
+            height: 250px;
+        }
+        
         .card:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
