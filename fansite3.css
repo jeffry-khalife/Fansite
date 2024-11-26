@@ -12,11 +12,13 @@ body {
 
 /* Header */
 header {
-    background: #000000;
+    background-image: url("img/head.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     color: #fff;
-    padding: 1em 0;
+    padding: 3em 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 7px 6px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
