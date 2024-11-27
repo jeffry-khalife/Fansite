@@ -12,31 +12,89 @@
     <h1>Photos et Vidéos de Mussolini</h1>
 </header>
 
-<nav>
+<!-- Menu principal -->
+<nav class="main-nav">
     <ul>
-        <li><a href="fansite3.html">Accueil</a></li>
-        <li><a href="#photo">Photos</a></li>
-        <li><a href="#videos">Vidéos</a></li>
+        <li>
+            <a href="#gastronomie">Gastronomie</a>
+            <ul>
+                <li><a href="recettes.html">Recettes</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="vins.html">Vins</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#acmilan">AC Milan</a>
+            <ul>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="joueurs.html">Joueurs</a></li>
+                <li><a href="calendrier.html">Calendrier</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#mussolini">Mussolini</a>
+            <ul>
+                <li><a href="fansite3.html">Biographie</a></li>
+                <li><a href="evenement.html">Événements</a></li>
+                <li><a href="photovideo.html">Photos et Vidéos</a></li>
+            </ul>
+        </li>
     </ul>
 </nav>
 
 <section id="photos">
     <h2>Photos</h2>
-    <p>Découvrez des photos historiques de Benito Mussolini :</p>
-    <img src="img/mussolini1.jpg" alt="Photo historique de Mussolini" style="max-width:100%;height:auto;">  
-    <img src="img/mussolini2.jpg" alt="Discours de Mussolini" style="max-width:100%;height:auto;">
+    <p>Cliquez sur une photo pour en savoir plus :</p>
+    <img src="img/mussolini1.jpg" alt="Photo historique de Mussolini" style="max-width:100%;height:auto;cursor:pointer;" onclick="openModal('texte1')">
+    <img src="img/mussolini2.jpg" alt="Discours de Mussolini" style="max-width:100%;height:auto;cursor:pointer;" onclick="openModal('texte2')">
 </section>
 
+<!-- Vidéos -->
 <section id="videos">
     <h2>Vidéos</h2>
-    <p>Le discours de Bénito Mussolini du 6 septembre 1934 à Bari :</p>
-        <iframe iframe width="560" height="315" src="https://www.youtube.com/embed/TZbNIRJmmBM?si=JPQXPK3evn0Fjhvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </video>+
+    <p>Regardez le discours de Benito Mussolini du 6 septembre 1934 à Bari :</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TZbNIRJmmBM?si=JPQXPK3evn0Fjhvo" 
+            title="Discours de Mussolini" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
 </section>
+
+<!-- Fenêtre modale -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p id="modal-text"></p>
+    </div>
+</div>
 
 <footer>
     <p>Retour à la <a href="fansite3.html">page principale</a>.</p>
 </footer>
+
+<script>
+    // Fonction pour ouvrir la modale avec le texte correspondant
+    function openModal(texteId) {
+        const texte = {
+            texte1: "Son style d’orateur, provocateur et gesticulatoire, contribue à asseoir son succès, même s’il choque les uns et fait rire les autres. Un journaliste républicain de Rome écrit : « Mussolini avec sa voix de baryton, avec sa mimique originale et comique, suscita l’hilarité ». Un autre raconte : « D’apparence, il n’était pas vieux, mais il ne paraissait pas jeune, avec sa mine négligée, sa cravate noire flottante à la Ravachol ; une barbe longue d’au moins trois jours qui assombrissait son visage, mais qui faisait contraste avec un crâne luisant, déjà prématurément chauve »",
+            texte2: "À l’étranger, et plus particulièrement dans les démocraties occidentales, son image est positive chez de nombreux dirigeants politiques et dans de larges secteurs de l’opinion publique qui considèrent qu’il a rétabli la paix sociale, fait la paix avec l’Église et qu’il est le plus sûr rempart contre la menace communiste. Aux États-Unis où vivent des millions d’Italo-Américains et où Mussolini publie des dizaines d’articles dans les journaux (sa biographie écrite par sa maîtresse Margherita Sarfatti a déjà obtenu un succès considérable en 1925), Franklin Delano Roosevelt lui prodigue des commentaires flatteurs en le considérant comme son « seul allié potentiel dans son effort pour sauvegarder la paix mondiale». En 1931, Gandhi, en visite à Rome, tient des propos très louangeurs à l’égard du Duce et de son régime."
+        };
+
+        document.getElementById("modal-text").textContent = texte[texteId];
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    // Fonction pour fermer la modale
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    // Fermer la modale si on clique à l'extérieur de son contenu
+    window.onclick = function(event) {
+        const modal = document.getElementById("myModal");
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
 
 </body>
 </html>
