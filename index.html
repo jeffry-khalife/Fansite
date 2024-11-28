@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="topnav.css">
     <title>Italia</title>
 </head>
 
@@ -15,11 +16,40 @@
     
 </header>
 <body>
-<nav>
-        <a href="#">Acceuil</a>
-        <a href="#">Gastronomie</a>
-        <a href="#">AC Milan</a>
-        <a href="#">Mussolini</a>
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn1"><a  href="index.html">Home</a></button>
+        </div>
+        <div class="dropdown1">
+            <button class="dropbtn1"><a href="fansite1.html">Gastronomie</a></button>
+            <div class="dropdown-content1">
+              <a href="palmares.html">Palmares</a>
+              <a href="legendsmilan.html">Legends</a>
+              <a href="actusmilan.html">Actuality</a>
+              <a href="contacts.html">Contatcs</a>
+             <a href="linksmilan.html">Links</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="fansite2.html">AC Milan</a></button>
+            <div class="dropdown-content">
+              <a href="palmares.html">Palmares</a>
+              <a href="legendsmilan.html">Legends</a>
+              <a href="actusmilan.html">Actuality</a>
+              <a href="contacts.html">Contatcs</a>
+             <a href="linksmilan.html">Links</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <button class="dropbtn2"><a href="fansite3.html">Mussolini</a></button>
+            <div class="dropdown-content2">
+              <a href="palmares.html">Palmares</a>
+              <a href="legendsmilan.html">Legends</a>
+              <a href="actusmilan.html">Actuality</a>
+              <a href="contacts.html">Contatcs</a>
+             <a href="linksmilan.html">Links</a>
+            </div>
+        </div>
     </nav>
 
     <!-- Main Content Section -->
@@ -28,30 +58,83 @@
             <!-- Card Section -->
             <div class="card-container">
                 <div class="card">
-                    <img src="img/gastronomie1.jpg" alt="Chef italien style cartoon">
+                    <a class="button" href="#popup0"><img src="img/gastronomie1.jpg" alt="Chef italien style cartoon"></a>
                     <h3>Gastronomie</h3>
-                    <p></p>
                 </div>
                 <div class="card">
-                    <img src="img/logomilan.png" alt="Logo de l'AC Milan">
+                    <a class="button" href="#popup1"><img src="img/logomilan.png" alt="Logo de l'AC Milan"></a>
                     <h3>AC Milan</h3>
-                    <p></p>
                 </div>
                 <div class="card">
-                    <img src="img/mussolini.jpg" alt="image de Mussolini">
+                    <a class="button" href="#popup2"><img src="img/mussolini.jpg" alt="image de Mussolini"></a>
                     <h3>Mussolini</h3>
-                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div id="popup0" class="overlay">
+            <div class="popup">
+                <img src="img/gastronomie1.jpg" alt="Chef italien style cartoon">
+                <a class="close" href="#">&times;</a>
+                <div class="contents">
+                    La Gastronomie Italienne
+                    Caractéristiques générales :
+                    La gastronomie italienne est l'une des plus célèbres et appréciées au monde. Elle varie d'une région à l'autre, mais elle est généralement caractérisée par l'utilisation de produits frais et locaux, des techniques de cuisson simples, et une forte attention à la qualité des ingrédients. Les repas italiens sont souvent centrés autour de plusieurs plats : entrée (antipasto), plat principal (primo et secondo), et dessert.
+                    Plats emblématiques :
+                    Pizza : Probablement le plat italien le plus connu, la pizza est originaire de Naples. La pizza Margherita, avec sa sauce tomate, mozzarella et basilic, est un symbole de la cuisine italienne.
+                    Pasta : Les pâtes italiennes, en particulier les pâtes fraîches comme les raviolis, les tagliatelles ou les gnocchis, sont un élément de base de la cuisine. Chaque région a ses propres variantes et recettes traditionnelles.
+                    Risotto : Un plat de riz crémeux, particulièrement populaire dans le nord de l'Italie, comme le risotto à la milanaise, qui contient du safran.
+                    Tiramisu : Le célèbre dessert à base de biscuits trempés dans le café et de mascarpone, souvent saupoudré de cacao, est un incontournable.
+                    Vins et fromages :
+                    L'Italie est également célèbre pour ses vins (comme le Chianti, le Barolo et le Prosecco) et ses fromages (par exemple, le Parmigiano Reggiano, la mozzarella, et le Gorgonzola). Le vin fait partie intégrante des repas italiens, et chaque région a ses spécialités.
+                    Régionalisme culinaire :
+                    La cuisine italienne varie énormément selon les régions. Par exemple, le nord de l'Italie privilégie des plats à base de riz, de beurre et de fromages, tandis que le sud de l'Italie est plus axé sur les tomates, l'huile d'olive et les fruits de mer. Les influences méditerranéennes sont omniprésentes dans la cuisine, et chaque région a ses propres traditions et spécialités.
+                    L'importance sociale de la nourriture :
+                    La nourriture joue un rôle essentiel dans la vie sociale des Italiens. Les repas sont souvent de grandes occasions de rassemblement familial et communautaire. Le concept du "pranzo" (déjeuner) ou du "cena" (dîner) est pris très au sérieux, souvent suivi d'une conversation animée autour de la table.
+                </div>
+            </div>
+        </div>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <img src="img/logomilan.png" alt="Logo de l'AC Milan">
+                <a class="close" href="#">&times;</a>
+                <div class="contents">
+                    L'AC Milan (Associazione Calcio Milan) est l'un des clubs de football les plus célèbres et prestigieux au monde, fondé en 1899 à Milan. Le club a remporté de nombreux titres nationaux et internationaux et est un symbole majeur du football italien.
+                    Succès en Serie A et compétitions européennes :
+                    L'AC Milan est l'un des clubs les plus titrés d'Italie, avec de multiples titres de Serie A (championnat national italien) et de Ligue des champions de l'UEFA, en particulier au 20ème siècle. Leur palmarès est impressionnant, avec 19 titres de Serie A (jusqu'à 2024), 7 Ligues des champions et plusieurs autres trophées internationaux.
+                    Les années dorées et les joueurs emblématiques :
+                    Le club a connu plusieurs périodes de domination, notamment dans les années 1980 et 1990 sous la direction de l'entraîneur Arrigo Sacchi, puis de Fabio Capello, avec des joueurs légendaires comme Paolo Maldini, Franco Baresi, Marco van Basten, et Alessandro Nesta. Ces années ont marqué l'histoire de l'AC Milan comme l'un des clubs les plus redoutables d'Europe.
+                    Identité et symbolisme :
+                    L'AC Milan est reconnu pour son maillot rouge et noir, et son symbole est une croix rouge, représentant la ville de Milan. Le club a une base de fans mondiale et est vu non seulement comme une équipe de football mais aussi comme un ambassadeur de la culture et de l'identité italiennes à l'échelle mondiale.
+                </div>
+            </div>
+        </div>
+        <div id="popup2" class="overlay">
+            <div class="popup">
+                <img src="img/mussolini.jpg" alt="image de Mussolini">
+                <a class="close" href="#">&times;</a>
+                <div class="contents">
+                    Benito Mussolini
+                    Qui était-il ?
+                    Benito Mussolini (1883-1945) était un homme politique, journaliste et dictateur italien, surtout connu pour avoir fondé le fascisme et dirigé l'Italie de 1922 jusqu'à sa déposition en 1943. Mussolini a exercé un pouvoir absolu en Italie et a transformé le pays en un état totalitaire avec des idéaux nationalistes et expansionnistes.
+                    Le fascisme :
+                    Mussolini est le fondateur du mouvement fasciste, qui a mis l'accent sur le nationalisme extrême, l'autoritarisme, le militarisme et la suppression de l'opposition. Il prônait une société unifiée sous la direction d'un leader fort, rejetant la démocratie libérale et le socialisme. Le régime fasciste italien a promu l'idée d'un "État corporatif", où l'économie et les industries étaient fortement contrôlées par l'État.
+                    Le rôle de Mussolini dans la Seconde Guerre mondiale :
+                    L'Italie de Mussolini a d'abord été alliée avec l'Allemagne nazie, avant que la situation ne dégénère avec la défaite militaire de l'Italie et la chute de Mussolini. En 1943, il a été destitué et arrêté, mais il a été sauvé par les Allemands et a été placé à la tête de la République sociale italienne (RSI), un régime fantoche contrôlé par l'Allemagne nazie. Mussolini a été capturé par les partisans italiens en 1945 et exécuté.
                 </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>© Copyright</p>
-        <table>
-            <tr> <td>Lucas GIAIMO</td> <td>Hylan HALLACI</td> <td>Jeffry KHALIFE</td></tr >
-       <br><a href="https://github.com/jeffry-khalife"><img src = "img/githublogo.png" width=2% height=5% ></a>
-        </table>
+        © Copyright
+        <div class="Copyright">
+            <p>Lucas GIAIMO
+            <br><a href="https://github.com/lucpagia"><img src = "img/githublogo.png" alt="logo github"></a></p>
+            <p>Hylan HALLACI
+            <br><a href="https://github.com/hylan-hallaci/"><img src = "img/githublogo.png" alt="logo github"></a></p>
+            <p>Jeffry KHALIFE
+            <br><a href="https://github.com/jeffry-khalife"><img src = "img/githublogo.png" alt="logo github"></a></p>
+    </div>
     </footer>
 
 </body>
