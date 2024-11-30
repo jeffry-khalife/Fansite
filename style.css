@@ -1,9 +1,30 @@
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1% 0;
+  width: 100%;
+  clear: both;
+
+  margin-top: auto;
+  }
+ 
+  .Copyright {
+  display: flex;
+  align-items: flex-end;
+  }
+ 
+  .Copyright img {
+  width:8%;
+  height:8%;
+  }
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f9;
-  color: whityr;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
   }
 
 header {
@@ -72,28 +93,6 @@ header h1 {
  font-size: 1.5rem;
  }
 
- 
- footer {
- background-color: black;
- color: white;
- text-align: center;
- padding: 1% 0;
- width: 100%;
- bottom: 0;
- }
-
- .Copyright {
- display: flex;
- align-items: flex-end;
- }
-
- .Copyright img {
- width:8%;
- height:8%;
- }
-
- 
-   
    .box {
  width: 40%;
  margin: 0 auto;
